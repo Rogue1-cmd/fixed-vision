@@ -14,7 +14,7 @@ pub struct Date {
     pub year: i32
 }
 
-// create get-current-date route under /date and call get_current_date service which will return a Date object
+// create get-current-date route under /date and call get_current_date service returns a Date object
 // route returns a Date object converted to JSON
 #[get("/date/get-current-date")]
 pub fn get_current_date() -> Json<Date> {
